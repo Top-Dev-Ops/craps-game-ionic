@@ -15,8 +15,8 @@ const routes: Routes = [
         path: '',
         component: MenuPage,
         children: [
-            {path: 'main', loadChildren: '../main/main.module#MainPageModule'},
-            {path: 'home', loadChildren: '../home/home.module#HomePageModule'},
+            {path: 'main', loadChildren: () => import('../main/main.module').then(m => m.MainPageModule)},
+            {path: 'home', loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)},
         ]
     }
 ];

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "craps-game-3d0bd": {
+      "hosting": {
+        "app": [
+          "craps-game-3d0bd"
+        ]
+      }
+    }
+  }
+}
