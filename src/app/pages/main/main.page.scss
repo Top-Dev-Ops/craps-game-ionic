@@ -1,0 +1,18 @@
+ion-content.background-image {
+  --background: url(../../../assets/images/craps_main_menu_bg.png) 0 0/100% 100% no-repeat;
+}
+
+ion-button.background-image {
+  --background: url(../../../assets/images/craps_play_btn.png) 0 0/100% 100% no-repeat;
+}
+
+ion-button.play-button {
+  width: 347px;
+  height: 90px;
+}
+
+$screenHeight: 100vh;
+
+.expandHeight {
+  height: $screenHeight;
+}
