@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -14,6 +14,10 @@ export class MainPage implements OnInit {
   }
 
   navigateToLogin(): void {
-    this.router.navigateByUrl('auth/login');
+    this.router.navigateByUrl('auth/login').then(r => {});
+  }
+
+  navigateToRegister(): void {
+    this.router.navigateByUrl('auth/register').then(r => {});
   }
 }
