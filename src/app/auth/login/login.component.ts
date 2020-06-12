@@ -9,6 +9,9 @@ import {AuthService} from '../services/auth/auth.service';
     styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+
+    showPassword = false;
+
     private loginForm: FormGroup = new FormGroup({
         email: new FormControl('', [Validators.required, Validators.email]),
         password: new FormControl('', [Validators.required, Validators.minLength(8)])
@@ -34,5 +37,9 @@ export class LoginComponent implements OnInit {
             }).then((bool) => {
                 bool? console.log('Successfully logged in.') : console.log('Login failed.');
         }).catch(err => console.log(err));
+    }
+
+    togglePasswordFieldType(): void {
+        this.showPassword = !this.showPassword;
     }
 }

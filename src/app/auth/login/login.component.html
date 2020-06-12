@@ -9,14 +9,18 @@
                     <ion-item lines="full">
                         <ion-input placeholder="Email" formControlName="email"></ion-input>
                     </ion-item>
+                    <br />
                     <ion-item lines="full">
-                        <ion-input placeholder="Password" formControlName="password"></ion-input>
+                        <ion-input placeholder="Password" formControlName="password"
+                                   [type]="showPassword ? 'text': 'password'"></ion-input>
+                        <ion-icon [name]="showPassword ? 'eye-off' : 'eye'" size="large"
+                                  (click)="togglePasswordFieldType()"></ion-icon>
                     </ion-item>
+                    <br />
                 </ion-item-group>
                 <ion-button expand="block" type="submit" [disabled]="!loginForm.valid">Login</ion-button>
             </form>
-            <ion-item class="ion-text-end" lines="none">
-                <ion-label (click)="navigateToForgotPassword()" color="primary">Forgot Password ?</ion-label>
+            <ion-item class="ion-text-start" lines="none">
                 <ion-label (click)="navigateToRegister()" color="primary">Register</ion-label>
             </ion-item>
         </ion-card-content>
