@@ -1,0 +1,177 @@
+ion-content{
+ --ion-background-color: #000000;
+}
+
+ion-button.background-image {
+  --background: url(../../../assets/images/craps_play_btn.png) 0 0/100% 100% no-repeat;
+}
+
+ion-button {
+  background-color: #000000;
+}
+
+ion-button.play-button {
+  width: 347px;
+  height: 90px;
+}
+
+ion-button.bets_button {
+  height: 40px;
+  margin: 1px 1px 1px 0;
+}
+
+$screenHeight: 100vh;
+
+.expandHeight {
+  height: $screenHeight;
+}
+
+.cell-class {
+  border-color: white;
+  border-width: .01em;
+  border-style:solid; margin-bottom : -1px;
+  background-color: #0d0d0d;
+}
+
+.cell-left-border {
+  border-top-left-radius: 30px;
+}
+
+.cell-right-border {
+  border-color: white;
+  border-width: .01em;
+  border-style:solid;
+  background-color: #0d0d0d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top-right-radius: 50px;
+}
+
+ion-card.coins {
+  border-top: 2px solid;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #715b44, #9f7758, #715b44);
+  height: 70%;
+}
+
+.cell-class-number {
+  background-image: linear-gradient(to right, #2d1f38, #2f4f4f, #2d1f38);
+}
+
+.circle-div {
+  border: 0.1em solid grey;
+  border-radius: 100%;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+}
+
+.circle-div p {
+  margin-top: 0.10em;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: grey;
+}
+
+span.green {
+  background: #5EA226;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 15px;
+  text-align: center;
+  width: 1.6em;
+}
+
+.number-circle {
+  background: #e0bb2e;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em;
+}
+
+ion-grid {
+  padding: 0;
+  margin: 0;
+}
+
+ion-toggle {
+  width: 40px;
+  height: 15px;
+}
+
+.numbers {
+  font-size: 2rem;
+  text-align: center;
+  height:90vh;
+  line-height: 90vh;
+  color: #fcedd8;
+  font-family: 'Niconne', cursive;
+  font-weight: 700;
+}
+
+.numbers-english {
+  font-size: .9rem;
+  text-align: center;
+  height:90vh;
+  line-height: 90vh;
+  color: #fcedd8;
+  font-family: 'Niconne', cursive;
+  font-weight: 700;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+}
+
+img {
+  width: 100%;
+}
+
+ion-card {
+  border-radius: 5px;
+  border: 1px white;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-3 {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-3 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-3 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-3 {
+    width: 20%;
+    float: left;
+  }
+}

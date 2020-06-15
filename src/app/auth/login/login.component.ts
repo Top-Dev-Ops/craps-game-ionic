@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
     doLogin(): void {
         this.authService.loginWithEmailAndPassword(this.loginForm.value.email, this.loginForm.value.password)
             .then(() => {
-                return this.router.navigateByUrl('menu');
+                return this.router.navigateByUrl('menu/home');
             }).then((bool) => {
                 bool? console.log('Successfully logged in.') : console.log('Login failed.');
         }).catch(err => console.log(err));

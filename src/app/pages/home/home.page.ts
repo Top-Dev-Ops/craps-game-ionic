@@ -12,4 +12,7 @@ export class HomePage implements OnInit {
   ngOnInit() {
   }
 
+  onClick(): void {
+    console.log('ODD button clicked.');
+  }
 }
